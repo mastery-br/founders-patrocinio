@@ -137,17 +137,16 @@ body{background:#000;color:#e2e2e2;font-family:'Sora',sans-serif;overflow-x:hidd
 /* Mobile: kit grid stacks + global spacing fixes */
 @media(max-width:600px){
   .kit-grid{grid-template-columns:1fr!important}
-  .section{padding:40px 16px}
-  .hero-section{padding:64px 16px 40px}
   .hero-title{font-size:clamp(2rem,9vw,3.5rem)!important}
+  .hero-badge{font-size:9px!important;letter-spacing:.1em!important;padding:7px 16px!important;border-radius:16px!important;white-space:normal!important;line-height:1.5!important;max-width:88vw!important;text-align:center!important}
+  .hero-meta{gap:20px!important}
+  .hero-meta-item .val{font-size:2rem!important}
   .section-title{font-size:clamp(1.4rem,6vw,2.2rem)!important}
   .stat-grid{grid-template-columns:repeat(2,1fr)!important}
   .speakers-grid{grid-template-columns:repeat(2,1fr)!important}
   .prod-specs{grid-template-columns:1fr!important}
   .audience-grid{grid-template-columns:1fr!important}
   .slide{min-height:auto!important;padding:60px 20px 48px!important}
-  .cota-exclusive-wrap{padding:36px 20px 32px!important;margin-bottom:32px!important}
-  .cota-exclusive-price{font-size:clamp(3rem,14vw,5rem)!important}
 }
 .cota-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:24px;transition:border-color .2s,transform .2s}
 .cota-card:hover{transform:translateY(-2px)}
