@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
@@ -45,7 +46,7 @@ body{background:#000;color:#e2e2e2;font-family:'Sora',sans-serif;overflow-x:hidd
 .hero-title{font-family:'Sora',sans-serif;font-size:clamp(3rem,9vw,8rem);font-weight:800;letter-spacing:-.06em;line-height:.9;margin-bottom:24px}
 .hero-title .line1{display:block;background:linear-gradient(135deg,#fff 40%,#c0cdff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-title .line2{display:block;background:linear-gradient(135deg,#ffffff,#ffffff,#ffffff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-title .line3{display:block;font-size:60%;background:linear-gradient(135deg,rgba(255,255,255,.5) 0%,rgba(255,255,255,.2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-.02em}
+.hero-title .line3{display:block;font-size:34%;font-weight:300;letter-spacing:.42em;-webkit-text-fill-color:rgba(255,255,255,.42);color:rgba(255,255,255,.42);background:none;margin-top:16px;text-indent:.42em}
 .hero-sub{font-size:clamp(1rem,2vw,1.25rem);color:#8892b0;max-width:580px;margin:0 auto 52px;line-height:1.6}
 .hero-meta{display:flex;justify-content:center;gap:56px;flex-wrap:wrap;margin-bottom:44px}
 .hero-meta-item .val{font-family:'Sora',sans-serif;font-size:2.4rem;font-weight:700;color:#ffffff;display:block;line-height:1}
@@ -182,6 +183,9 @@ body{background:#000;color:#e2e2e2;font-family:'Sora',sans-serif;overflow-x:hidd
 .fo-row i{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;color:#fff;font-size:1.18em}
 .blogo{height:32px;max-width:140px;object-fit:contain;opacity:.65;filter:brightness(0) invert(1)}
 .bword{font-family:'Sora',sans-serif;font-size:1.05rem;font-weight:700;letter-spacing:.14em;color:rgba(255,255,255,.55);line-height:32px;white-space:nowrap}
+
+.msi{font-family:'Material Symbols Outlined';font-variation-settings:'FILL' 0,'wght' 200,'opsz' 24;line-height:1;color:inherit;vertical-align:middle}
+.venue-slide img,.venue-slide video{filter:grayscale(1) contrast(1.05) brightness(.92)}
 </style>
 </head>
 <body>
@@ -231,7 +235,7 @@ body{background:#000;color:#e2e2e2;font-family:'Sora',sans-serif;overflow-x:hidd
     <div class="hero-meta-item"><span class="val">R$600M</span><span class="lbl">Faturamento na sala</span></div>
     <div class="hero-meta-item"><span class="val">11</span><span class="lbl">Founders no palco</span></div>
   </div>
-  <div class="hero-date">📅 <strong>28 e 29 de agosto de 2026</strong> · Riviera Convention Center · Praia Brava · SC</div>
+  <div class="hero-date"><span class="msi" style="font-size:1rem;margin-right:7px;opacity:.55">calendar_month</span><strong>28 e 29 de agosto de 2026</strong> · Riviera Convention Center · Praia Brava · SC</div>
 </section>
 
 <!-- MARQUEE TEXTO -->
@@ -313,6 +317,9 @@ body{background:#000;color:#e2e2e2;font-family:'Sora',sans-serif;overflow-x:hidd
 .fo-row i{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;color:#fff;font-size:1.18em}
 .blogo{height:32px;max-width:140px;object-fit:contain;opacity:.65;filter:brightness(0) invert(1)}
 .bword{font-family:'Sora',sans-serif;font-size:1.05rem;font-weight:700;letter-spacing:.14em;color:rgba(255,255,255,.55);line-height:32px;white-space:nowrap}
+
+.msi{font-family:'Material Symbols Outlined';font-variation-settings:'FILL' 0,'wght' 200,'opsz' 24;line-height:1;color:inherit;vertical-align:middle}
+.venue-slide img,.venue-slide video{filter:grayscale(1) contrast(1.05) brightness(.92)}
 </style>
 <div class="vc">
   <button class="va vp" onclick="vg(vc-1)">&#8249;</button>
@@ -370,12 +377,12 @@ el.addEventListener('touchend',function(e){var d=e.changedTouches[0].clientX-sx;
   </div>
 
   <div class="prod-specs">
-    <div class="prod-card"><span class="prod-icon">🎭</span><div class="prod-label">Palco Modular</div><div class="prod-detail">24m² · Estrutura Rosco · 12 praticáveis 2×1m · Carpet preto</div></div>
-    <div class="prod-card"><span class="prod-icon">📺</span><div class="prod-label">Painel LED P2</div><div class="prod-detail">12,5m de painel LED alta resolução · Processador de vídeo 4K · Presenter remote</div></div>
-    <div class="prod-card"><span class="prod-icon">💡</span><div class="prod-label">Iluminação</div><div class="prod-detail">8 Moving Heads Beam 10R · 22 PAR LED RGBW · 8 COB LED · 19 Strobes LED</div></div>
-    <div class="prod-card"><span class="prod-icon">🔊</span><div class="prod-label">Áudio</div><div class="prod-detail">Line Array vertical · Subwoofers · 4 Microfones · Console de mixagem profissional</div></div>
-    <div class="prod-card"><span class="prod-icon">👥</span><div class="prod-label">Equipe Técnica</div><div class="prod-detail">2 técnicos de audiovisuais · Suporte full durante os 2 dias</div></div>
-    <div class="prod-card"><span class="prod-icon">📅</span><div class="prod-label">Duração</div><div class="prod-detail">2 dias · 28 e 29 de agosto de 2026 · Riviera Convention Center</div></div>
+    <div class="prod-card"><span class="prod-icon msi">podium</span><div class="prod-label">Palco Modular</div><div class="prod-detail">24m² · Estrutura Rosco · 12 praticáveis 2×1m · Carpet preto</div></div>
+    <div class="prod-card"><span class="prod-icon msi">tv</span><div class="prod-label">Painel LED P2</div><div class="prod-detail">12,5m de painel LED alta resolução · Processador de vídeo 4K · Presenter remote</div></div>
+    <div class="prod-card"><span class="prod-icon msi">lightbulb</span><div class="prod-label">Iluminação</div><div class="prod-detail">8 Moving Heads Beam 10R · 22 PAR LED RGBW · 8 COB LED · 19 Strobes LED</div></div>
+    <div class="prod-card"><span class="prod-icon msi">speaker</span><div class="prod-label">Áudio</div><div class="prod-detail">Line Array vertical · Subwoofers · 4 Microfones · Console de mixagem profissional</div></div>
+    <div class="prod-card"><span class="prod-icon msi">groups</span><div class="prod-label">Equipe Técnica</div><div class="prod-detail">2 técnicos de audiovisuais · Suporte full durante os 2 dias</div></div>
+    <div class="prod-card"><span class="prod-icon msi">calendar_month</span><div class="prod-label">Duração</div><div class="prod-detail">2 dias · 28 e 29 de agosto de 2026 · Riviera Convention Center</div></div>
   </div>
 </section>
 
@@ -511,7 +518,7 @@ el.addEventListener('touchend',function(e){var d=e.changedTouches[0].clientX-sx;
 
 <!-- CTA -->
 <section class="slide cta-slide" id="cta">
-  <div class="cta-urgency">⚡ Cotas de palco limitadas</div>
+  <div class="cta-urgency">Cotas de palco limitadas</div>
   <h2 class="cta-title">Sua marca na frente de<br>R$600M em faturamento.</h2>
   <p class="cta-sub">As cotas de palco (Diamante e Ouro) são limitadas. Garanta a sua para entrar em todos os materiais de divulgação pré-evento.</p>
   <a class="cta-btn" href="https://wa.me/5547984655343?text=Olá%2C+Ana!+Tenho+interesse+em+patrocinar+o+MARCA+EXPERIENCE+2026.+Pode+me+enviar+mais+informações+sobre+as+cotas%3F" target="_blank" style="display:inline-flex;align-items:center;gap:10px;font-size:1.05rem">
@@ -526,28 +533,28 @@ el.addEventListener('touchend',function(e){var d=e.changedTouches[0].clientX-sx;
   <div style="margin-top:60px;padding-top:52px;border-top:1px solid rgba(255,255,255,.08)">
     <div style="text-align:center;margin-bottom:36px">
       <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:#ffffff;margin-bottom:10px">Incluído em todas as cotas</div>
-      <div style="font-family:'Sora',sans-serif;font-size:1.8rem;font-weight:700;letter-spacing:-.02em">🎁 Kit do Patrocinador</div>
+      <div style="font-family:'Sora',sans-serif;font-size:1.8rem;font-weight:700;letter-spacing:-.02em"><span class="msi" style="font-size:1.5rem;vertical-align:-5px;margin-right:8px">redeem</span>Kit do Patrocinador</div>
       <p style="font-size:.9rem;color:#8892b0;max-width:500px;margin:10px auto 0;line-height:1.6">Material da sua empresa nas mãos de 200–350 founders. Entregue no check-in do evento.<br>
-      <span style="font-size:.85rem;color:#ffffff;margin-top:8px;display:inline-block">📦 O patrocinador produz e entrega os materiais físicos no local. O evento inclui no kit e distribui.</span></p>
+      <span style="font-size:.85rem;color:#ffffff;margin-top:8px;display:inline-block">O patrocinador produz e entrega os materiais físicos no local. O evento inclui no kit e distribui.</span></p>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:720px;margin:0 auto" class="kit-grid">
       <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:24px">
-        <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#ffffff;margin-bottom:14px">📦 Físico</div>
+        <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#ffffff;margin-bottom:14px"><span class="msi" style="font-size:1rem;vertical-align:-2px;margin-right:6px">inventory_2</span>Físico</div>
         <ul style="list-style:none">
-          <li style="font-size:.84rem;color:#8892b0;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);display:flex;gap:8px"><span>📄</span>Flyer ou folder A5 da empresa</li>
-          <li style="font-size:.84rem;color:#8892b0;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);display:flex;gap:8px"><span>🎁</span>Brinde com a marca (caneta, squeeze, camiseta, adesivo)</li>
-          <li style="font-size:.84rem;color:#8892b0;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);display:flex;gap:8px"><span>📲</span>Card com QR Code para oferta exclusiva "aluno Marca 7D"</li>
-          <li style="font-size:.84rem;color:#8892b0;padding:6px 0;display:flex;gap:8px"><span>🏷️</span>Voucher ou desconto especial para participantes</li>
+          <li style="font-size:.84rem;color:#8892b0;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);display:flex;gap:8px"><span class="msi" style="font-size:1rem">description</span>Flyer ou folder A5 da empresa</li>
+          <li style="font-size:.84rem;color:#8892b0;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);display:flex;gap:8px"><span class="msi" style="font-size:1rem">redeem</span>Brinde com a marca (caneta, squeeze, camiseta, adesivo)</li>
+          <li style="font-size:.84rem;color:#8892b0;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);display:flex;gap:8px"><span class="msi" style="font-size:1rem">qr_code_2</span>Card com QR Code para oferta exclusiva "aluno Marca 7D"</li>
+          <li style="font-size:.84rem;color:#8892b0;padding:6px 0;display:flex;gap:8px"><span class="msi" style="font-size:1rem">sell</span>Voucher ou desconto especial para participantes</li>
         </ul>
       </div>
       <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:24px">
-        <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#ffffff;margin-bottom:14px">📱 Digital — sempre incluso</div>
+        <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#ffffff;margin-bottom:14px"><span class="msi" style="font-size:1rem;vertical-align:-2px;margin-right:6px">smartphone</span>Digital — sempre incluso</div>
         <ul style="list-style:none">
-          <li style="font-size:.84rem;color:#8892b0;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);display:flex;gap:8px"><span>🔗</span>Link ou QR Code para trial / demo / oferta exclusiva</li>
-          <li style="font-size:.84rem;color:#8892b0;padding:6px 0;display:flex;gap:8px"><span>🎟️</span>Acesso especial com cupom exclusivo do evento</li>
+          <li style="font-size:.84rem;color:#8892b0;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);display:flex;gap:8px"><span class="msi" style="font-size:1rem">link</span>Link ou QR Code para trial / demo / oferta exclusiva</li>
+          <li style="font-size:.84rem;color:#8892b0;padding:6px 0;display:flex;gap:8px"><span class="msi" style="font-size:1rem">confirmation_number</span>Acesso especial com cupom exclusivo do evento</li>
         </ul>
         <div style="margin-top:16px;padding:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);border-radius:10px">
-          <p style="font-size:.78rem;color:#ffffff;line-height:1.5">💡 Quanto maior a cota, maior o destaque do material no kit e mais ingressos para o seu time.</p>
+          <p style="font-size:.78rem;color:#ffffff;line-height:1.5"><span class="msi" style="font-size:1rem;vertical-align:-2px;margin-right:5px">tips_and_updates</span>Quanto maior a cota, maior o destaque do material no kit e mais ingressos para o seu time.</p>
         </div>
       </div>
     </div>
